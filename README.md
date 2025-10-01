@@ -6,14 +6,14 @@ The analysis was done using SQL queries to address key business and operational 
 
 Hospitals generate vast amounts of data across multiple departments. However, without proper analysis, this data remains underutilized. This project aims to analyze hospital data to:
 
-- Identify high-performing doctors and departments.
+- Identify departments with the highest appointments.
 - Detect operational inefficiencies.
 - Understand patient behavior and value.
 - Optimize insurance and payment systems.
 - Improve overall healthcare service delivery.
 
 ## 📥 Data Source
-
+**Source** https://www.kaggle.com/datasets/kanakbaghel/hospital-management-dataset
 The dataset used in this project simulates a **Hospital Management System** and includes tables such as:
 - `doctors`
 - `appointments`
@@ -21,7 +21,37 @@ The dataset used in this project simulates a **Hospital Management System** and 
 - `treatments`
 - `billing`
 
-## 🧠 Insights Report
-- Pediatrics has the most appointment.
-- **Recommendation**;This departments receive the highest patient flow. Scheduling resources and time slots should be prioritized accordingly.
+## 📊 Key Insights and Recommendation
+### 🛠 Operational Insights
+- **Top Specializations by Appointment**: Pediatrics has the highest appointments.
+- The Central Branch shows the highest number of cancellations.
+- **Recommendation**: Investigate causes – doctor availability, long wait times, or patient drop-offs.
+
+- **Peak Appointment Days**:Tuesdays and Wednessdays show the highest patient traffic
+
+- **Appointment Status by Branch**: Some branches experience higher cancellation rates, suggesting process inefficiencies.
+- **Peak Appointment Days**:Tuesdays and Wednessdays show the highest patient traffic.
+
+### 👨‍⚕️ Doctor Productivity
+- **Revenue by Doctor**: - Dr. Sarah Talyor (Demartalogy, Central) – $33,836
+  - Dr. Alex Davis (Pediatrics, Central) – $25,698
+- **Appointment Distribution**: Appointment load is unevenly distributed among doctors, leading to potential overwork.
+
+### 💳 Revenue & Billing Analysis
+### 🧾 Total Revenue by Payment Status
+- **Paid**: $173,424
+- **Pending**: $184,612
+- **Failed**: $193,212
+- **Insight**: Improve recovery on pending bills and reduce failed payments with automated alerts.
+
+- **Failed Payments**: Credit card and mobile payment methods show the highest failure rates.
+
+### 🏦 Insurance Optimization
+- **Top Insurance Providers**: A small number of insurance companies cover the majority of patients, but some underperform in payment reliability.
+
+### 🧑‍🤝‍🧑 Patient Segmentation
+- **Top Spending Patients**: A small percentage of patients are responsible for a high portion of total payments.
+- **Frequent Visitors**: Patients with chronic or recurring needs represent opportunities for care plan optimization.
+
+---
   
