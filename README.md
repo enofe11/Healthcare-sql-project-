@@ -11,5 +11,5 @@ A comprehensive SQL project analyzing hospital data to extract insights on patie
 
 ## 🧠 Insights Report
 - Pediatrics has the most appointment.
-**Recommendation**;This departments receive the highest patient flow. Scheduling resources and time slots should be prioritized accordingly.
+- **Recommendation**;This departments receive the highest patient flow. Scheduling resources and time slots should be prioritized accordingly.
   
