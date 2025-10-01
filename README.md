@@ -9,7 +9,7 @@ A comprehensive SQL project analyzing hospital data to extract insights on patie
 - What is the most used insurance provider?
 - Who are the top spending and most frequent patients?
 
-# 🧠 Insights Report
+## 🧠 Insights Report
 - Pediatrics has the most appointment.
-This departments receive the highest patient flow. Scheduling resources and time slots should be prioritized accordingly.
+**Recommendation**;This departments receive the highest patient flow. Scheduling resources and time slots should be prioritized accordingly.
   
