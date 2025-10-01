@@ -7,6 +7,8 @@ The analysis was done using SQL queries to address key business and operational 
 Hospitals generate vast amounts of data across multiple departments. However, without proper analysis, this data remains underutilized. This project aims to analyze hospital data to:
 
 - Identify departments with the highest appointments.
+- Branch with the higest cancellations.
+- What are the Peak days
 - Detect operational inefficiencies.
 - Understand patient behavior and value.
 - Optimize insurance and payment systems.
@@ -14,7 +16,7 @@ Hospitals generate vast amounts of data across multiple departments. However, wi
 
 ## 📥 Data Source
 **Source** https://www.kaggle.com/datasets/kanakbaghel/hospital-management-dataset
-The dataset used in this project simulates a **Hospital Management System** and includes tables such as:
+- The dataset used in this project simulates a **Hospital Management System** and includes tables such as:
 - `doctors`
 - `appointments`
 - `patients`
@@ -22,36 +24,30 @@ The dataset used in this project simulates a **Hospital Management System** and 
 - `billing`
 
 ## 📊 Key Insights and Recommendation
-### 🛠 Operational Insights
-- **Top Specializations by Appointment**: Pediatrics has the highest appointments.
+- Pediatrics has the highest appointments.
 - The Central Branch shows the highest number of cancellations.
 - **Recommendation**: Investigate causes – doctor availability, long wait times, or patient drop-offs.
 
-- **Peak Appointment Days**:Tuesdays and Wednessdays show the highest patient traffic
-
-- **Appointment Status by Branch**: Some branches experience higher cancellation rates, suggesting process inefficiencies.
-- **Peak Appointment Days**:Tuesdays and Wednessdays show the highest patient traffic.
+- Tuesdays and Wednessdays show the highest patient traffic
 
 ### 👨‍⚕️ Doctor Productivity
-- **Revenue by Doctor**: - Dr. Sarah Talyor (Demartalogy, Central) – $33,836
-  - Dr. Alex Davis (Pediatrics, Central) – $25,698
-- **Appointment Distribution**: Appointment load is unevenly distributed among doctors, leading to potential overwork.
-
-### 💳 Revenue & Billing Analysis
-### 🧾 Total Revenue by Payment Status
+- **Revenue by Doctor**: - Dr. Sarah Talyor (Demartalogy, Central) – $33,836,Dr. Alex Davis (Pediatrics, Central) – $25,698
+- **Appointment Distribution**:Dr.Sarah Taylor (Central hospital) has the highest appointment 29 While Dr.Robert Davis (Westside Clinic) has the least appointments 13
+- Appointment load is unevenly distributed among doctors, leading to potential overwork.
+  
+### Total Revenue by Payment Status
 - **Paid**: $173,424
 - **Pending**: $184,612
 - **Failed**: $193,212
 - **Insight**: Improve recovery on pending bills and reduce failed payments with automated alerts.
 
-- **Failed Payments**: Credit card and mobile payment methods show the highest failure rates.
+- **Failed rate count**:Cash(23), Credit card(23) and Insurance (21).
+- **Recommendation**No single payment method dominates in failure rate;this suggests that the failures are systemic. Invesigate common cause across all payment methods(such as downtime,incorrect customer details, or transaction limits) and implement monitoring to reduce overall failure rate.
 
-### 🏦 Insurance Optimization
-- **Top Insurance Providers**: A small number of insurance companies cover the majority of patients, but some underperform in payment reliability.
+- **Top Insurance Providers**: MedCare Plus	18 patients and WellnessCorp with	16 patients.
 
 ### 🧑‍🤝‍🧑 Patient Segmentation
-- **Top Spending Patients**: A small percentage of patients are responsible for a high portion of total payments.
-- **Frequent Visitors**: Patients with chronic or recurring needs represent opportunities for care plan optimization.
+- 10 patients account for 20% of total hospital revenue
+- Recommendation: Enroll them in VIP health plans or loyalty programs
 
----
   
